@@ -29,6 +29,7 @@ async function boredom(){
   const res = await fetch('http://www.boredapi.com/api/activity?type='+ choice)
   const data = await res.json()
   console.log(data)
+  document.querySelector('h2').textContent = data.activity
 
   try{
     console.log('i work')
